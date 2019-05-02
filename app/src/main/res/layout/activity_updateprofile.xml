@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".updateprofile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="8dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/gambar"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="15dp"/>
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="2dp"
+            android:layout_marginVertical="20dp"
+            android:layout_gravity="center"
+            android:background="@color/lightgray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama: "
+            android:textStyle="bold"
+            android:textSize="18dp"/>
+
+        <EditText
+            android:id="@+id/etnama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Lengkap"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin:"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etjeniskelamin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Wanita/Pria"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pendidikan:"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etpendidikan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="SMA/D3/S1"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etalamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alamat Lengkap "
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kontak: "
+            android:textStyle="bold"
+            android:textSize="18dp"/>
+
+        <EditText
+            android:id="@+id/etkontak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Nomor HP"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="10dp">
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="SAVE"
+                android:id="@+id/btnsave"
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/colorPrimary"
+                android:textColor="#fff"
+                android:onClick="saveKlik"/>
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="CANCEL"
+                android:id="@+id/btncancel"
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/colorPrimary"
+                android:textColor="#fff"
+                android:onClick="cancelKlik"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

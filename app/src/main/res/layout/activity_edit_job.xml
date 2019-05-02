@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".EditJob">
+
+    <TextView
+        android:id="@+id/text_id_pekerjaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Form Edit"
+        android:layout_gravity="center"
+        android:textColor="@color/putih"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="30sp"
+        />
+    <EditText
+        android:id="@+id/editText_perusahaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Input Company's Name"
+        android:layout_marginTop="15dp"
+        android:background="#afffffff"
+        android:layout_below="@id/text_id_pekerjaan"
+        >
+        <requestFocus />
+    </EditText>
+    <EditText
+        android:id="@+id/editText_pekerjaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Input Job's Name"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:background="#afffffff"
+        android:layout_below="@id/editText_perusahaan"
+        />
+    <EditText
+        android:id="@+id/editText_pendidikan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Input Type Of Education"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:background="#afffffff"
+        android:layout_below="@id/editText_pekerjaan"
+        />
+    <EditText
+        android:id="@+id/editText_lokasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Input Location's Job"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:background="#afffffff"
+        android:layout_below="@id/editText_pendidikan"
+        />
+    <EditText
+        android:id="@+id/editText_durasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Input Duration's Job"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:background="#afffffff"
+        android:layout_below="@id/editText_lokasi"
+        />
+    <EditText
+        android:id="@+id/editText_kontak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Input Contact (Email)"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:background="#afffffff"
+        android:layout_below="@id/editText_durasi"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_below="@id/editText_kontak"
+        >
+        <Button
+            android:id="@+id/button_save_update"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/tex_edit"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            />
+
+        <Button
+            android:id="@+id/button_cancel_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tex_edit"
+            android:textColor="@color/colorAccent"
+            android:text="CANCEL"
+            />
+    </LinearLayout>
+</LinearLayout>

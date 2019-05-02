@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreateJob">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEW FORM TO CREATE A JOB "
+        android:textSize="25dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/nama_perusahaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:ems="20"
+        android:hint="Input Company's Name"
+        android:inputType="text"
+        android:paddingLeft="10dp">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/nama_pekerjaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:ems="20"
+        android:hint="Input Job's Name"
+        android:inputType="text"
+        android:paddingLeft="10dp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/nama_pendidikan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:ems="20"
+        android:hint="Input Type Of Education"
+        android:inputType="text"
+        android:paddingLeft="10dp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/lokasi_kerja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:ems="20"
+        android:hint="Input Location's Job"
+        android:inputType="text"
+        android:paddingLeft="10dp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/durasi_kerja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:ems="20"
+        android:hint="Input Duration's Job (Day)"
+        android:inputType="text"
+        android:paddingLeft="10dp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/kontak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:ems="20"
+        android:hint="Input Contact (Email)"
+        android:inputType="text"
+        android:paddingLeft="10dp">
+
+    </EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="90dp"
+        android:paddingTop="50dp">
+        <Button
+            android:id="@+id/button_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:onClick="submitKlik"
+            />
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:onClick="klikBack"
+            />
+    </LinearLayout>
+
+</LinearLayout>

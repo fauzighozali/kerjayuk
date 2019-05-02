@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kerjayuk">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ViewMore"></activity>
+        <activity android:name=".updateprofile" />
+        <activity android:name=".ViewSingleDataJob" />
+        <activity android:name=".EditJob" />
+        <activity android:name=".ViewJob" />
+        <activity android:name=".CreateJob" />
+        <activity android:name=".about" />
+        <activity android:name=".inbox" />
+        <activity android:name=".search" />
+        <activity android:name=".timeline" />
+        <activity android:name=".home" />
+        <activity android:name=".register" />
+        <activity android:name=".login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
